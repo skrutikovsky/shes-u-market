@@ -1,0 +1,69 @@
+=slowly-transition
+  transition: all .25s ease-in-out
+
+header
+  +slowly-transition
+  position: sticky
+  top: 0
+  left: 0
+  height: 70px
+  width: 100%
+  z-index: 9
+  display: flex
+  justify-content: space-between
+  align-items: center
+  color: #faf8f3
+  font-size: 30px
+  backdrop-filter: blur(10px)
+
+.burger-menu
+  width: 60px
+  position: relative
+  background: transparent
+  border: transparent
+.burger-menu::before
+  content: ""
+  background: #faf8f3
+  width: 50px
+  height: 5px
+  position: absolute
+  top: 20%
+  left: 5%
+.burger-menu::after
+  content: ""
+  background: #faf8f3
+  width: 50px
+  height: 5px
+  position: absolute
+  bottom: 20%
+  left: 5%
+
+.header-left-side
+  position: relative
+  left: 10px
+  font-weight: 400
+  display: flex
+  width: 33%
+  justify-content: start
+  gap: 20px
+
+.header-centre-side
+  font-weight: 600
+  width: 33%
+  text-align: center
+  font-size: 36px
+
+.header-right-side
+  position: relative
+  right: 10px
+  display: flex
+  justify-content: end
+  gap: 20px
+  width: 33%
+
+.login, .basket
+  background: #faf8f3
+  height: 40px
+  width: 40px
+.sale
+  color: #da0000

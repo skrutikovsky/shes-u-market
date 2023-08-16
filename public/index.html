@@ -9,6 +9,7 @@
       name="description"
       content="Web site created using create-react-app"
     />
+    <link rel="stylesheet" href="%PUBLIC_URL%/styles/index.css"/>
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -27,17 +28,169 @@
     <title>React App</title>
   </head>
   <body>
+    <header>
+      <div class="header-left-side">
+        <button class="burger-menu"></button>
+        <div>WOMAN`S</div>
+        <div class="sale">SALE</div>
+      </div>
+      <div class="header-centre-side">SHE`S U</div>
+      <div class="header-right-side">
+        <div class="login"></div>
+        <div class="basket"></div>
+      </div>
+    </header>
+    <main>
+      <section class="img-collage">
+        <div class="img-collage-container">
+          <img src="%PUBLIC_URL%/img/main%20photo.jpg" alt="main photo"/>
+        </div>
+        <div class="img-collage-slider">
+          <button class="img-collage-sliders-item button-slider"><</button>
+          <button class="img-collage-sliders-item button-slider">></button>
+        </div>
+      </section>
+      <h1  class="swiper-title">MUST HAVE</h1>
+      <section class="swiper">
+        <div class="swiper-container">
+          <div class="swiper-item">
+            <div class="swiper-item-photo">
+              <img src="%PUBLIC_URL%/img/swiper1.jpg" alt="photo"/>
+            </div>
+            <div class="swiper-color-list">
+              <div class="swiper-color-item"></div>
+              <div class="swiper-color-item"></div>
+              <div class="swiper-color-item"></div>
+            </div>
+            <div class="swiper-item-name">Курточка Stone-Island</div>
+          </div>
+          <div class="swiper-item">
+            <div class="swiper-item-photo">
+              <img src="%PUBLIC_URL%/img/swiper2.jpg" alt="photo"/>
+            </div>
+            <div class="swiper-color-list">
+              <div class="swiper-color-item"></div>
+              <div class="swiper-color-item"></div>
+              <div class="swiper-color-item"></div>
+              <div class="swiper-color-item"></div>
+              <div class="swiper-color-item"></div>
+            </div>
+            <div class="swiper-item-name">Курточка Stone-Island</div>
+          </div>
+          <div class="swiper-item">
+            <div class="swiper-item-photo">
+              <img src="%PUBLIC_URL%/img/swiper3.jpg" alt="photo"/>
+            </div>
+            <div class="swiper-color-list">
+              <div class="swiper-color-item"></div>
+              <div class="swiper-color-item"></div>
+              <div class="swiper-color-item"></div>
+            </div>
+            <div class="swiper-item-name">Курточка Stone-Island</div>
+          </div>
+          <div class="swiper-item">
+            <div class="swiper-item-photo">
+              <img src="%PUBLIC_URL%/img/swiper4.jpg" alt="photo"/>
+            </div>
+            <div class="swiper-color-list">
+              <div class="swiper-color-item"></div>
+              <div class="swiper-color-item"></div>
+              <div class="swiper-color-item"></div>
+            </div>
+            <div class="swiper-item-name">Курточка Stone-Island</div>
+          </div>
+          <div class="swiper-item">
+            <div class="swiper-item-photo">
+              <img src="%PUBLIC_URL%/img/swiper1.jpg" alt="photo"/>
+            </div>
+            <div class="swiper-color-list">
+              <div class="swiper-color-item"></div>
+              <div class="swiper-color-item"></div>
+              <div class="swiper-color-item"></div>
+            </div>
+            <div class="swiper-item-name">Курточка Stone-Island</div>
+          </div>
+          <div class="swiper-item">
+            <div class="swiper-item-photo">
+              <img src="%PUBLIC_URL%/img/swiper2.jpg" alt="photo"/>
+            </div>
+            <div class="swiper-color-list">
+              <div class="swiper-color-item"></div>
+              <div class="swiper-color-item"></div>
+              <div class="swiper-color-item"></div>
+            </div>
+            <div class="swiper-item-name">Курточка Stone-Island</div>
+          </div>
+        </div>
+        <div class="swiper-sliders">
+          <button class="button-slider"><</button>
+          <button class="button-slider">></button>
+        </div>
+      </section>
+      <h1 class="social-links-title">SOCIAL LINKS</h1>
+      <section class="social-links">
+        <div class="social-links-item">
+          <h2 class="social-links-item-title">INSTAGRAM</h2>
+          <div class="social-links-item-description">Запрещенная в россии организация</div>
+        </div>
+        <div class="social-links-item">
+          <h2 class="social-links-item-title">VKONTAKTE</h2>
+          <div class="social-links-item-description">Присоединяйся к нашему сообществу</div>
+        </div>
+        <div class="social-links-item">
+          <h2 class="social-links-item-title">TELEGRAM</h2>
+          <div class="social-links-item-description">Все новинки и акции с уведомлениями</div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about-description">
+          <h1>SHE`S U</h1>
+          <h2>Российский street fashion бренд авангардной мужской и женской одежды основанный в 2019 году.</h2>
+          <h3>Бренд сочетает в себе актуальные базовые street wear изделия и культовые тренды мировой уличной моды
+            <br>Мы создаем наши изделия ради тысячи восторженных взглядов на вас, свободы самовыражения и любви к жизни в любом ее проявлении.
+            Мы растем вместе с вами, с каждым прекрасным человеком, который соприкоснулся с нашим продуктом и брендом
+          </h3>
+          <h4>Шестакова Яна<br>основатель бренда SHE`S U</h4>
+        </div>
+        <div class="about-video">
+          <video autoplay preload="auto" loop muted src="https://10.react.pages.academy/static/film/video/dog.mp4"></video>
+        </div>
+      </section>
+      <h1 class="scrolling-img-title">YOU ARE</h1>
+      <section class="scrolling-img">
+        <img src="%PUBLIC_URL%/img/main%20photo.jpg" alt="scrolling img"/>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-redirect">
+        <div>@SHE`S U 2023</div>
+        <div>SHE`S U</div>
+        <div class="footer-redirect-right">
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Vk</a>
+        </div>
+      </div>
+      <div class="footer-rules">
+        <a>Политика конфиденциальности</a>
+        <a>Доставка и оплата</a>
+        <a>Обмен и возврат</a>
+        <a>Рекомендации по уходу</a>
+        <a>Контакты и реквизиты</a>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-director">ИП Шестакова Я. А. ИНН: 500712434428 | ООО «SSS» ИНН/КПП 9709094252/770901001</div>
+        <div class="footer-bottom-pay">
+          <img src="https://source.unsplash.com/random/200x200?sig=3" alt="mastercard"/>
+          <img src="https://source.unsplash.com/random/200x200?sig=4" alt="visa"/>
+          <img src="https://source.unsplash.com/random/200x200?sig=5" alt="МИР"/>
+        </div>
+        <div class="footer-bottom-warning">*Facebook и Instagram являются продуктами компании Meta Platforms inc. признанной экстремистской организацией и запрещенной в Российской Федерации.
+
+        </div>
+      </div>
+    </footer>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
