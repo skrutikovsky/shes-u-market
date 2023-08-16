@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
@@ -28,16 +28,37 @@
     <title>React App</title>
   </head>
   <body>
+  <!-- BASIC HEADER-->
+<!--    <header>-->
+<!--      <div class="header-left-side">-->
+<!--        <button class="burger-menu"></button>-->
+<!--        <div>CATALOG</div>-->
+<!--        <div class="sale">SALE</div>-->
+<!--      </div>-->
+<!--      <div class="header-centre-side">SHE`S U</div>-->
+<!--      <div class="header-right-side">-->
+<!--        <div class="login">-->
+<!--          <img src="%PUBLIC_URL%/img/lk.png"/>-->
+<!--        </div>-->
+<!--        <div class="basket">-->
+<!--          <img src="%PUBLIC_URL%/img/basket.png"/>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </header>-->
     <header>
       <div class="header-left-side">
         <button class="burger-menu"></button>
-        <div>WOMAN`S</div>
+        <div>CATALOG</div>
         <div class="sale">SALE</div>
       </div>
       <div class="header-centre-side">SHE`S U</div>
       <div class="header-right-side">
-        <div class="login"></div>
-        <div class="basket"></div>
+        <div class="login">
+          <img src="%PUBLIC_URL%/img/lk.png"/>
+        </div>
+        <div class="basket">
+          <img src="%PUBLIC_URL%/img/basket.png"/>
+        </div>
       </div>
     </header>
     <main>
@@ -142,6 +163,26 @@
           <div class="social-links-item-description">Все новинки и акции с уведомлениями</div>
         </div>
       </section>
+      <h1 class="top-sale-title">TOP SALE</h1>
+      <section class="top-sale">
+        <div class="top-sale-big-img">
+          <img src="%PUBLIC_URL%/img/swiper1.jpg"/>
+        </div>
+        <div class="top-sale-list">
+          <div class="top-sale-list-item">
+            <img src="%PUBLIC_URL%/img/swiper2.jpg"/>
+            <span>Курточка Stone Island</span>
+          </div>
+          <div class="top-sale-list-item">
+            <img src="%PUBLIC_URL%/img/swiper3.jpg"/>
+            <span>Курточка Stone Island</span>
+          </div>
+          <div class="top-sale-list-item">
+            <img src="%PUBLIC_URL%/img/swiper4.jpg"/>
+            <span>Курточка Stone Island</span>
+          </div>
+        </div>
+      </section>
       <section class="about">
         <div class="about-description">
           <h1>SHE`S U</h1>
@@ -158,7 +199,15 @@
       </section>
       <h1 class="scrolling-img-title">YOU ARE</h1>
       <section class="scrolling-img">
-        <img src="%PUBLIC_URL%/img/main%20photo.jpg" alt="scrolling img"/>
+        <img src="%PUBLIC_URL%/img/swiper1.jpg" alt="scrolling img"/>
+        <img src="%PUBLIC_URL%/img/swiper2.jpg" alt="scrolling img"/>
+        <img src="%PUBLIC_URL%/img/swiper3.jpg" alt="scrolling img"/>
+        <img src="%PUBLIC_URL%/img/swiper4.jpg" alt="scrolling img"/>
+        <img src="%PUBLIC_URL%/img/swiper1.jpg" alt="scrolling img"/>
+        <img src="%PUBLIC_URL%/img/swiper2.jpg" alt="scrolling img"/>
+        <img src="%PUBLIC_URL%/img/swiper3.jpg" alt="scrolling img"/>
+        <img src="%PUBLIC_URL%/img/swiper4.jpg" alt="scrolling img"/>
+        <img src="%PUBLIC_URL%/img/swiper1.jpg" alt="scrolling img"/>
       </section>
     </main>
     <footer>
@@ -181,12 +230,11 @@
       <div class="footer-bottom">
         <div class="footer-bottom-director">ИП Шестакова Я. А. ИНН: 500712434428 | ООО «SSS» ИНН/КПП 9709094252/770901001</div>
         <div class="footer-bottom-pay">
-          <img src="https://source.unsplash.com/random/200x200?sig=3" alt="mastercard"/>
-          <img src="https://source.unsplash.com/random/200x200?sig=4" alt="visa"/>
-          <img src="https://source.unsplash.com/random/200x200?sig=5" alt="МИР"/>
+          <img src="%PUBLIC_URL%/img/visa.png" alt="mastercard"/>
+          <img src="%PUBLIC_URL%/img/mastercard.png" alt="visa"/>
+          <img src="%PUBLIC_URL%/img/mir.png" alt="МИР"/>
         </div>
         <div class="footer-bottom-warning">*Facebook и Instagram являются продуктами компании Meta Platforms inc. признанной экстремистской организацией и запрещенной в Российской Федерации.
-
         </div>
       </div>
     </footer>
