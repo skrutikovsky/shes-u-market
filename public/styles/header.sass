@@ -1,11 +1,17 @@
 =slowly-transition
   transition: all .25s ease-in-out
-
 header
+  width: 100%
   +slowly-transition
-  position: sticky
+  position: fixed
   top: 0
   left: 0
+
+  backdrop-filter: blur(10px)
+  z-index: 5
+.opened
+  background-color: rgba(17,17,17,.85)
+.header-top-side
   height: 3vw
   width: 100%
   display: flex
@@ -13,7 +19,6 @@ header
   align-items: center
   color: #faf8f3
   font-size: 3vw
-  backdrop-filter: blur(1px)
 .burger-menu
   width: 5vw
   height: 2vw
@@ -72,6 +77,25 @@ header
     object-fit: contain
 .sale
   color: #da0000 !important
+.header-links
+  width: 100%
+  display: flex
+  flex-direction: column
+.header-links-item
+  width: 100%
+  padding: 3vw 0
+  border-top: 1px dashed white
+  display: flex
+  align-items: center
+  justify-content: center
+  gap: 3vw
+  span
+    font-size: 3vw
+    color: #faf8f3
+.header-links-item:nth-child(3)
+  span
+    font-size: 1.5vw
+
 @media (max-width: 800px)
   .header-centre-side
     display: none
@@ -79,7 +103,7 @@ header
     display: block
     margin-right: 20px
     height: 100%
-  header
+  .header-top-side
     height: 40px
     font-size: 20px
   .header-left-side
@@ -107,3 +131,22 @@ header
     position: absolute
     bottom: -5px
     left: 5%
+  .header-links
+    width: 100%
+    display: flex
+    flex-direction: column
+  .header-links-item
+    width: 100%
+    padding: 3vw 0
+    border-top: 1px dashed white
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    gap: 10px
+    span
+      font-size: 32px
+      color: #faf8f3
+  .header-links-item:nth-child(3)
+    span
+      font-size: 16px
