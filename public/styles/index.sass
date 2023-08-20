@@ -9,19 +9,39 @@
 @import "footer"
 =slowly-transition
   transition: all .25s ease-in-out
-@media (min-width: 850px)
+body
+  font-family: Inter,sans-serif
+  background: #111
+  margin-top: 0
+  width: 100%
+h1
+  font-size: 5vw
+  font-weight: 400
+  margin: 0
+  color: #faf8f3
+h2
+  font-size: 3vw
+  margin: 0
+  color: #faf8f3
+main
+  display: flex
+  flex-direction: column
+  align-items: center
+  color: white
+  margin-top: -3vw
+@media (max-width: 800px)
   body
     font-family: Inter,sans-serif
     background: #111
     margin-top: 0
+    width: 100%
   h1
-    font-size: 7vw
+    font-size: 30px
     font-weight: 400
     margin: 0
     color: #faf8f3
-
   h2
-    font-size: 4vw
+    font-size: 24px
     margin: 0
     color: #faf8f3
   main
@@ -29,4 +49,4 @@
     flex-direction: column
     align-items: center
     color: white
-    margin-top: -2vw
+    margin-top: -50px

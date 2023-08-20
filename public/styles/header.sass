@@ -8,14 +8,12 @@ header
   left: 0
   height: 3vw
   width: 100%
-
   display: flex
   justify-content: space-between
   align-items: center
   color: #faf8f3
   font-size: 3vw
-  backdrop-filter: blur(10px)
-
+  backdrop-filter: blur(1px)
 .burger-menu
   width: 5vw
   height: 2vw
@@ -38,7 +36,6 @@ header
   position: absolute
   bottom: 20%
   left: 5%
-
 .header-left-side
   position: relative
   left: 1vw
@@ -57,24 +54,56 @@ header
   width: 33%
   text-align: center
   font-size: 2vw
-
 .header-right-side
   position: relative
   right: 1vw
   display: flex
   justify-content: end
-  gap: 20px
+  gap: 1vw
   width: 33%
-
 .login, .basket
   height: 3vw
   width: 3vw
   background: none
   border: none
-
   img
     width: 70%
     height: 70%
     object-fit: contain
 .sale
   color: #da0000 !important
+@media (max-width: 800px)
+  .header-centre-side
+    display: none
+  .burger-menu
+    display: block
+    margin-right: 20px
+    height: 100%
+  header
+    height: 40px
+    font-size: 20px
+  .header-left-side
+    left: 10px
+    gap: 10px
+    justify-content: left
+    button
+      font-size: 20px
+  .login, .basket
+    height: 40px
+    width: 40px
+  .burger-menu::before
+    content: ""
+    background: #faf8f3
+    width: 30px
+    height: 2px
+    position: absolute
+    top: 15px
+    left: 5%
+  .burger-menu::after
+    content: ""
+    background: #faf8f3
+    width: 30px
+    height: 2px
+    position: absolute
+    bottom: -5px
+    left: 5%

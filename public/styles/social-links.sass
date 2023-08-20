@@ -1,9 +1,9 @@
 .social-links-title
-  margin-top: -80px
+  margin-top: -2vw
 .social-links
   box-sizing: border-box
-  padding: 0 35px
-  margin-top: 80px
+  padding: 0 3vw
+  margin-top: 8vw
   display: flex
   width: 100%
   justify-content: space-evenly
@@ -13,9 +13,25 @@
   width: 33%
   border-top: 1px #909090 dashed
   h2
-    margin: 15px 0 10px 0
+    margin: 2vw 0 10px 0
     font-weight: 400
   div
     font-size: 1.5vw
     font-weight: 400
     color: #909090
+@media (max-width: 800px)
+  .social-links-title
+    margin: -30px 0
+  .social-links
+    margin-top: 80px
+    flex-direction: column
+  .social-links-item
+    width: 100%
+  .social-links-item
+    h2
+      margin: 10px 0 10px 0
+      font-weight: 400
+    div
+      font-size: 14px
+      font-weight: 400
+      color: #909090
