@@ -6,67 +6,75 @@ header
   position: sticky
   top: 0
   left: 0
-  height: 70px
+  height: 3vw
   width: 100%
-  z-index: 9
+
   display: flex
   justify-content: space-between
   align-items: center
   color: #faf8f3
-  font-size: 30px
+  font-size: 3vw
   backdrop-filter: blur(10px)
 
 .burger-menu
-  width: 60px
+  width: 5vw
+  height: 2vw
   position: relative
   background: transparent
   border: transparent
 .burger-menu::before
   content: ""
   background: #faf8f3
-  width: 50px
-  height: 5px
+  width: 3vw
+  height: 0.2vw
   position: absolute
   top: 20%
   left: 5%
 .burger-menu::after
   content: ""
   background: #faf8f3
-  width: 50px
-  height: 5px
+  width: 3vw
+  height: 0.2vw
   position: absolute
   bottom: 20%
   left: 5%
 
 .header-left-side
   position: relative
-  left: 10px
+  left: 1vw
   font-weight: 400
   display: flex
   width: 33%
   justify-content: start
-  gap: 20px
-
+  gap: 1vw
+  button
+    color: #faf8f3
+    background: none
+    border: none
+    font-size: 2vw
 .header-centre-side
   font-weight: 600
   width: 33%
   text-align: center
-  font-size: 36px
+  font-size: 2vw
 
 .header-right-side
   position: relative
-  right: 10px
+  right: 1vw
   display: flex
   justify-content: end
   gap: 20px
   width: 33%
 
 .login, .basket
-  height: 40px
-  width: 40px
+  height: 3vw
+  width: 3vw
+  background: none
+  border: none
+
   img
     width: 70%
     height: 70%
     object-fit: contain
 .sale
-  color: #da0000
+  color: #da0000 !important

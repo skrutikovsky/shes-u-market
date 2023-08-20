@@ -4,50 +4,59 @@
   box-sizing: border-box
   overflow: hidden
   width: 100%
-  height: 1200px
+  height: 60vw
 .swiper-container
   box-sizing: border-box
   overflow: hidden
   width: 100%
-  height: 100%
+  height: 90%
   display: flex
 .swiper-item
   display: flex
   flex-direction: column
   justify-content: left
-  height: 100%
+  height: 60vw
   gap: 5px
-
+  width: 35vw
+  font-size: 2vw
+  box-sizing: border-box
+  color: #faf8f3
 .swiper-item-photo
-  width: 600px
-  height: 85%
+  width: 35vw
+  height: 60vw
   img
-    object-fit: cover
+    object-fit: contain
     width: 100%
     height: 100%
+
+.swiper-color-list
+  display: flex
+  gap: 1vw
+  justify-content: center
+  position: relative
+  bottom: 10vw
+.swiper-color-item
+  display: block
+  background: red
+  width: 2vw
+  height: 2vw
+  border: 0.3vw solid #111111
+  border-radius: 1vw
+.button-slider
+  border-radius: 50%
+  width: 5vw
+  height: 5vw
+  background: transparent
+  border: 0
+  color: white
+  font-size: 5vw
+  backdrop-filter: blur(10px)
 .swiper-sliders
   display: flex
   justify-content: space-between
   position: relative
-  bottom: 700px
-  width: 100%
-  height: 80px
+  bottom: 31vw
 .swiper-item-name
-  font-weight: 400
-  font-size: 20px
-  box-sizing: border-box
-  padding: 5px
+  z-index: 4
   color: #faf8f3
-.swiper-color-list
-  display: flex
-  gap: 15px
-  justify-content: center
-  position: relative
-  bottom: 100px
-.swiper-color-item
-  display: block
-  background: red
-  width: 25px
-  height: 25px
-  border: 2px solid #111111
-  border-radius: 10px
+  font-size: 3vw
