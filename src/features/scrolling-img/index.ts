@@ -1,0 +1,1 @@
+export {ScrollingImg} from "./ui";
