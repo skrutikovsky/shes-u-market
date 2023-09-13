@@ -1,0 +1,1 @@
+export {SwiperProducts} from "./ui";

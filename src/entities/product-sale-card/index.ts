@@ -1,0 +1,1 @@
+export {ProductSaleCard} from "./ui";

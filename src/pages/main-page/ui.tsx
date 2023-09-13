@@ -1,19 +1,19 @@
 import {JSX} from "react";
 import {Header} from "../../widgets/header";
-import {Collage} from "../../features/collage";
-import {Swiper} from "../../features/swiper";
-import {SocialLinks} from "../../features/social-links/ui";
-import {TopSale} from "../../features/top-sale";
-import {About} from "../../features/about";
-import {ScrollingImg} from "../../features/scrolling-img";
-import {Footer} from "../../features/footer";
+import {Collage} from "../../widgets/collage";
+import {SwiperProducts} from "../../widgets/swiper-products";
+import {SocialLinks} from "../../widgets/social-links/ui";
+import {TopSale} from "../../widgets/top-sale";
+import {About} from "../../widgets/about";
+import {ScrollingImg} from "../../widgets/scrolling-img";
+import {Footer} from "../../widgets/footer";
 
 export function MainPage(): JSX.Element {
     return (
         <>
             <Header></Header>
             <Collage></Collage>
-            <Swiper></Swiper>
+            <SwiperProducts title={'MUST HAVE'}></SwiperProducts>
             <SocialLinks></SocialLinks>
             <TopSale></TopSale>
             <About></About>

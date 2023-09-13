@@ -1,0 +1,1 @@
+export {ProductCardSwiper} from "./ui";

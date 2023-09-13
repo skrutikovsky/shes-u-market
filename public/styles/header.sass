@@ -1,6 +1,7 @@
 =slowly-transition
   transition: all .25s ease-in-out
 header
+  z-index: 20
   width: 100%
   +slowly-transition
   position: fixed
@@ -8,7 +9,6 @@ header
   left: 0
 
   backdrop-filter: blur(10px)
-  z-index: 5
 .opened
   background-color: rgba(17,17,17,.85)
 .header-top-side
@@ -25,6 +25,7 @@ header
   position: relative
   background: transparent
   border: transparent
+  cursor: pointer
 .burger-menu::before
   content: ""
   background: #faf8f3
