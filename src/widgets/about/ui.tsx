@@ -16,7 +16,7 @@ export function About(): JSX.Element{
             </div>
             <div className="about-video">
                 <video autoPlay preload="auto" loop muted
-                       src="https://10.react.pages.academy/static/film/video/dog.mp4"></video>
+                       src="/img/video-site.mp4"></video>
             </div>
         </section>
 

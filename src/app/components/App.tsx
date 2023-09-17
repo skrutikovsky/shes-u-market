@@ -8,6 +8,8 @@ import {CatalogPage} from "../../pages/catalog-page";
 import {SalePage} from "../../pages/sale-page";
 import {BasketPage} from "../../pages/basket-page";
 import {ProfilePage} from "../../pages/profile-page";
+import {CarePage} from "../../pages/care-page";
+import {ProductDetailsPage} from "../../pages/product-details-page";
 
 
 
@@ -20,6 +22,8 @@ function App() {
               <Route path={AppRouter.SALE} element={<SalePage/>}/>
               <Route path={AppRouter.BASKET} element={<BasketPage/>}/>
               <Route path={AppRouter.PROFILE} element={<ProfilePage/>}/>
+              <Route path={AppRouter.CARE} element={<CarePage/>}/>
+              <Route path={AppRouter.DETAILS} element={<ProductDetailsPage/>}/>
               <Route path={'*'}/>
           </Routes>
       </HistoryRouter>

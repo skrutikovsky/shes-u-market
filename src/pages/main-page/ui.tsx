@@ -1,4 +1,4 @@
-import {JSX} from "react";
+import {JSX, useEffect} from "react";
 import {Header} from "../../widgets/header";
 import {Collage} from "../../widgets/collage";
 import {SwiperProducts} from "../../widgets/swiper-products";
@@ -9,6 +9,9 @@ import {ScrollingImg} from "../../widgets/scrolling-img";
 import {Footer} from "../../widgets/footer";
 
 export function MainPage(): JSX.Element {
+    useEffect(()=>{
+        window.scrollTo(0,0);
+    },[])
     return (
         <>
             <Header></Header>

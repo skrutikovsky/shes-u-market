@@ -37,3 +37,22 @@
     object-fit: contain
     align-self: center
     filter: invert(95%)
+@media (max-width: 800px)
+  .layout
+    gap: 3vh
+  .personal-page
+    padding-top: 7vh
+    height: 100%
+    gap: 3vh
+    min-height: 60vh
+    margin: 3vh auto 0
+  .personal-page-buttons
+    @include slowly-transition()
+    cursor: pointer
+    box-sizing: border-box
+    padding: 2vh 3vh 0
+    border-radius: 4vh
+    width: 30vh
+    height: 30vh
+    background: #161616
+    font-size: 3vh

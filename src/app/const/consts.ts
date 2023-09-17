@@ -4,4 +4,6 @@ export enum AppRouter {
     PROFILE = '/profile',
     CATALOG = '/catalog',
     SALE = '/sale',
+    CARE = '/care',
+    DETAILS = '/details'
 }

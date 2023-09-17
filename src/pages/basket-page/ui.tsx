@@ -1,4 +1,4 @@
-import React, {Fragment, JSX} from "react";
+import React, {Fragment, JSX, useEffect} from "react";
 import {ProductInBasket} from "../../entities/product-in-basket";
 import {SwiperProducts} from "../../widgets/swiper-products";
 import {Header} from "../../widgets/header";
@@ -6,6 +6,9 @@ import {Footer} from "../../widgets/footer";
 import {PayFields} from "../../features/pay-fields";
 
 export function BasketPage(): JSX.Element{
+    useEffect(()=>{
+        window.scrollTo(0,0);
+    },[])
     return (
         <Fragment>
             <Header/>

@@ -1,0 +1,224 @@
+.details-back-img
+  box-sizing: content-box
+  height: 100vh !important
+  width: auto !important
+  img
+    object-fit: contain
+    width: 100%
+    height: 100%
+.details-window
+  color: #faf8f3
+  z-index: 100
+  position: absolute
+  bottom: 0
+  right: 0
+  width: 25vw
+  height: 41vw
+  background: #161616
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+.details-window-top
+  border-bottom: 1px dashed #909090
+  font-size: 1.2vw
+  font-weight: 700
+  padding: 1vw
+  display: flex
+  align-items: center
+  justify-content: space-between
+  height: 4vw
+  div
+    text-align: left
+  button
+    cursor: pointer
+    border: 3px solid #faf8f3
+    padding: 0.7vw 1vw
+    background: none
+    font-size: 1.5vw
+    color: #faf8f3
+    width: 50%
+    font-weight: 700
+.details-window-stock
+  justify-content: space-between
+  padding: 1vw
+  display: flex
+  align-items: center
+  border-bottom: 1px dashed #909090
+  div:nth-child(1)
+    font-size: 1.2vw
+.in-stock
+  display: flex
+  align-items: center
+  font-size: 1vw
+.stock-true, .stock-false
+  display: block
+  width: 0.5vw
+  height: 0.5vw
+  background: green
+  border-radius: 50%
+  margin-right: 0.3vw
+.stock-false
+  background: red
+.stock-true
+  background: green
+.details-description
+  padding: 1vw
+  font-size: 1vw
+.details-similar-title
+  padding: 1vw 1vw
+  font-size: 1vw
+.details-similar-container
+  overflow-x: scroll
+.details-similar-container::-webkit-scrollbar
+  width: 1vw
+.details-similar-container::-webkit-scrollbar-track
+  background: #161616
+.details-similar-container::-webkit-scrollbar-thumb
+  border: 0.2vw solid #161616
+  background-color: #262626
+.details-options-container
+  display: flex
+  box-sizing: border-box
+  width: 20vh!important
+  height: 4vw
+  position: relative
+.details-options
+  width: 100%
+  height: 4vw
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: space-evenly
+.details-color
+  z-index: 15
+  position: absolute
+  margin-left: auto
+  margin-right: auto
+  left: 0
+  right: 0
+  text-align: center
+  list-style: none
+  width: 10vw
+  padding: 0
+  li
+    font-size: 1vw
+    margin-left: auto
+    margin-right: auto
+    cursor: pointer
+    display: none
+    background: #818181
+    border-bottom: 1px dashed #909090
+    width: 9vw
+    height: 2vw
+    align-items: center
+    justify-content: center
+  li:nth-child(1)
+    display: flex
+.details-options-container:hover .details-color > li
+  display: flex !important
+.details-similar
+  padding: 1vw
+  gap: 1vw
+  display: flex
+  flex-direction: column
+  div:nth-child(1)
+    text-align: left
+.details-similar-container
+  display: flex
+  width: 100%
+  height: auto
+  .product-card
+    margin-bottom: 0
+    width: 33.3%
+  .product-name, .product-cost
+    font-size: 0.8vw !important
+    margin: 0
+@media (max-width: 1100px)
+  .details-window
+    box-sizing: border-box
+    z-index: 10
+    width: 50vw
+    height: 100vh
+    padding: 2.5vh
+    justify-content: flex-start
+  .details-similar-container
+    display: flex
+    flex-wrap: wrap
+    .product-card
+      margin-bottom: 1vw
+@media (max-width: 800px)
+  .details-back-img
+    box-sizing: content-box
+    height: 50vh !important
+    width: auto !important
+    img
+      object-fit: contain
+      width: 100%
+      height: 100%
+  .details-window
+    padding: 1vh 0 0 0
+    z-index: 100
+    position: relative
+    width: 100%
+    height: auto
+  .details-window-top
+    font-size: 2vh
+    padding: 1vh
+    height: 4vh
+    div
+      text-align: left
+    button
+      border: 0.5vh solid #faf8f3
+      padding: 0.7vh 1vh
+      background: none
+      font-size: 2vh
+      color: #faf8f3
+  .details-window-stock
+    padding: 1vh
+    div:nth-child(1)
+      font-size: 2vh
+  .in-stock
+    font-size: 2vh
+  .stock-true, .stock-false
+    width: 1vh
+    height: 1vh
+    margin-right: 0.5vh
+  .details-description
+    padding: 1vh
+    font-size: 2vh
+  .details-options-container
+    display: flex
+    box-sizing: border-box
+    width: 20vh!important
+    height: 4vh
+    position: relative
+  .details-options
+    height: 4vh
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: space-evenly
+  .details-similar-title
+    font-size: 2vh
+    padding: 3vh 1vh 1vh
+  .details-color
+    left: 0
+    right: 0
+    width: 10vh
+    li
+      font-size: 2vh
+      display: none
+      width: 12vh
+      height: 3vh
+  .details-similar
+    width: 100%
+    padding: 0
+    gap: 1vh
+  .details-similar-container
+    width: 100%
+    padding: 0
+    .product-card
+      width: 50%
+    .product-name, .product-cost
+      font-size: 2vh !important
+      margin: 0

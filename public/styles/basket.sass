@@ -18,7 +18,6 @@
   gap: 2vw
 .added-product
   box-sizing: border-box
-  padding-right: 2vw
   background: #161616
   border: 1px solid #262626
   font-size: 1vw
@@ -37,12 +36,26 @@
     height: 100%
     margin-right: 3vw
 .product-center-side
+  width: 100%
+  padding-right: 10vw
   display: flex
   gap: 2vw
+  align-items: center
+  justify-content: space-between
+
+.product-color-counter
+  display: flex
+  align-items: center
+.product-props
+  display: flex
+  width: 10vw
+  gap: 1vw
   div
+    box-sizing: border-box
     display: flex
     align-items: center
     justify-content: center
+
 .product-right-side
   display: flex
 .product-counter
@@ -58,9 +71,7 @@
   width: 2vw
   height: 2vw
 .close-button
-  position: absolute
-  left: 98%
-  bottom: 85%
+  align-self: start
   background: none
   border: none
   color: #faf8f3
@@ -123,4 +134,58 @@
   img
     object-fit: cover
     height: 80%
+@media (max-width: 800px)
+  .added-product-list
+    padding-top: 10vh
+    width: 95%
+    margin: 0 auto
+  .added-product
+    height: 12vh
+    font-size: 1.5vh
+  .product-color-counter
+    flex-direction: column
+    gap: 1vh
+    align-items: start
+  .product-center-side
+    flex-direction: column
+    align-items: start
+  .product-props
+    width: 12vh
+    gap: 1vh
+  .product-counter
+    gap: 1vh
+  .product-color
+    width: 8vh
+    height: 3vh
+  .product-size
+    width: 3vh
+    height: 3vh
+  .basket-counter
+    font-size: 3vh
+  .product-price
+    align-self: end
+    padding-bottom: 1vh
+  .close-button
+    background: none
+    border: none
+    color: #faf8f3
+    font-size: 1vh
+
+  .basket-payment
+    margin-top: 4vh
+    gap: 2vh
+    width: 30vh
+  .promo-code
+    height: 5vh
+    input
+      font-size: 2vh
+      padding-left: 1vh
+    button
+      width: 6vh
+      height: 5vh
+      font-size: 3vh
+  .button-buy
+    height: 5vh
+    padding: 0 1vh
+    font-size: 2vh
 

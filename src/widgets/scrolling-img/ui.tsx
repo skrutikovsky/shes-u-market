@@ -9,8 +9,8 @@ export function ScrollingImg(): JSX.Element {
             <h1 className="scrolling-img-title">YOU ARE</h1>
             <section className="scrolling-img">
                 <Swiper
-                    slidesPerView={4}
-                    autoplay={{ delay: 1000 }} // Задержка между переключением слайдов (в миллисекундах)
+                    slidesPerView={'auto'}
+                    autoplay={{ delay: 1000, disableOnInteraction: false }} // Задержка между переключением слайдов (в миллисекундах)
                     loop={true}
                     speed={1000}
                     effect={"fade"}

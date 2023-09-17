@@ -18,17 +18,18 @@ export function Collage() {
         <section className="img-collage">
             <Swiper
                 className="img-collage-container"
+                slidesPerView={1}
                 loop={true}
                 autoplay={{ delay: 10000, disableOnInteraction: false, }}
             >
-                <SwiperSlide key={1}>
-                    <img src="/img/main-1.jpg" alt="main" />
+                <SwiperSlide key={1} className="collage">
+                    <img src="/img/main1.jpg" alt="main" />
                 </SwiperSlide>
-                <SwiperSlide key={2}>
-                    <img src="/img/main-2.jpg" alt="main" />
+                <SwiperSlide key={2} className="collage">
+                    <img src="/img/main2.jpg" alt="main" />
                 </SwiperSlide>
-                <SwiperSlide key={3}>
-                    <img src="/img/main-3.jpg" alt="main" />
+                <SwiperSlide key={3} className="collage">
+                    <img src="/img/main3.jpg" alt="main" />
                 </SwiperSlide>
                 <div className="img-collage-slider">
 
